@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  letter-spacing: 2.7px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.heading {
+  position: absolute;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin-left: 35.3rem;
+  margin-top: 20.4rem;
+  background-color: #7a5c61;
+  border-radius: 6px;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  height: 100%;
+  width: 100%;
+  background: url(/image/Havan\ Car\ Night\ Sunset.jpg) no-repeat fixed;
+  background-size: cover;
+  /* background-position: 50% 10%; */
+}
+
+.second {
+  background: url(/image/Vintage\ Camera.jpg) no-repeat fixed;
+}
+
+.second > p {
+  color:black;
+}
+
+.third {
+  background: url(/image/Vinyl\ Turntable.jpg) no-repeat fixed;
+}
+
+.fourth {
+  background: url(/image/Game\ Over.jpg) no-repeat fixed;
+  background-position: 50% 71%;
+  margin-top: -1rem;
+}
+
+
+
+.para1 {
+  letter-spacing: 2.7px;
+  line-height: 1.8rem;
+  text-align: center;
+  padding: 1.8rem;
+  margin-top: 0.0001rem;
+  background-color: #454645;
+  color: white;
+}
+
+.span1 {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  letter-spacing: 0.6rem;
+  text-align: center;
+  margin-top: 12rem;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.second p {
+  background-color: #d4c5d4;
+}
+
+.second > h3 {
+  color: rgb(215, 239, 247);
+}
+
+.third > h3 {
+  color: rgb(122, 117, 117);
+}
+
+.fourth > h1 {
+  margin-left: 40.5rem;
+  transition: transform 2s;
+}
+
+.fourth > h1:hover {
+  transform: rotate(180deg);
+}
+
+.slide-right {
+  overflow: hidden;
+}
+
+.slide-right h1 {
+  animation: 6s slide-right forwards;
+  animation-timing-function:ease-in-out;
+  /* transform:translateX(-100%); */
+}
+
+.vibrate:hover {
+  animation: 1.5s vibrate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateY(-25%);
+  }
+  20% {
+    transform: translateY(25%);
+  }
+  40% {
+    transform: translateY(-15%);
+  }
+  60% {
+    transform: translateY(15%);
+  }
+  80% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes slide-right {
+  0% {
+    transform:translateX(-100%);
+  }
+  17% {
+    transform: translateX(100%);
+  }
+  34% {
+    transform: translateX(-50%);
+  }
+  51% {
+    transform: translateX(50%);
+  }
+  68% {
+    transform: translateX(-10%);
+  }
+  85% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
